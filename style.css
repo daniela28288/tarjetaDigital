@@ -45,6 +45,10 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+.boladisco{
+  max-width: 100%;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -52,7 +56,7 @@ body {
 
 h1 {
   font-family: 'RougeScript';
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 200;
   color: #CB6CE6;
   animation: glow 2s infinite alternate;
@@ -69,7 +73,7 @@ h1 {
 }
 
 .dresscode{
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .fa-envelope {
@@ -108,7 +112,7 @@ a img:hover {
 }
 
 .countdown-item .number {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
 }
 
@@ -119,32 +123,4 @@ a img:hover {
 
 .footer {
   width: 100%;
-}
-
-
-/* --------- ESTILOS RESPONSIVOS PARA CELULARES --------- */
-@media (max-width: 600px) {
-  .phone {
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 32px;
-    text-align: center;
-  }
-
-
-  .countdown-item .number {
-    font-size: 40px;
-  }
-
-  .countdown-item .label {
-    font-size: 17px;
-  } 
-
-  a img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
 }
