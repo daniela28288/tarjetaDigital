@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'RougeScript';
+  src: url(fonts/RougeScript-Regular.ttf);
+}
+
+body{
+  font-family: 'Poppins';
+  color: white;
+  width: 100%;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 91;
+  pointer-events: none;
+  background: transparent; 
+}
+
+
+.phone{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1{
+  font-family: 'RougeScript';
+  font-size: 45px;
+  font-weight: 200;
+  color: #CB6CE6;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 2px #CB6CE6; }
+  to   { text-shadow: 0 0 4px #CB6CE6, 0 0 15px #CB6CE6; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.fa-envelope {
+  animation: heartbeat 1.5s infinite;
+}
+
+.colores{
+  margin-top: 20px;
+}
+
+.grupito{
+  width: 100%;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+a img {
+  transition: transform 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.05);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-item .number {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.countdown-item .label {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.footer{
+  width: 100%;
+}
