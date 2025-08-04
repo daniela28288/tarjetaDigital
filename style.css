@@ -23,6 +23,7 @@ body {
   align-items: center;
 }
 
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -39,21 +40,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   background-color: black;
   padding: 0;
   animation: fadeIn 1s ease-in-out;
 }
 
+.fuente{
+  max-width: 100%;
+}
+
 .btn{
-  width: 340px;
+  max-width: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 10px 5px;
+  padding: 10px 15px;
   border-radius: 10px;
   border: none;
   font-family: 'Poppins';
@@ -108,12 +114,21 @@ h1 {
 
 .colores {
   margin-top: 20px;
+  max-width: 100%;
 }
 
 .grupito {
   width: 100%;
 }
 
+p{
+  text-justify: center;
+  max-width: 100%;
+}
+
+.line{
+  max-width: 100%;
+}
 
 .estrellas-container {
   display: flex;
@@ -121,6 +136,7 @@ h1 {
   gap: 2rem;
   padding: 2rem;
   background-color: black;
+  max-width: 100%;
 }
 
 .estrellas {
@@ -238,8 +254,17 @@ a img:hover {
 .countdown {
   display: flex;
   justify-content: center;
+  margin: 20px 50px;
   gap: 40px;
-  width: 100%;
+  /* max-width: 100%; */
+}
+
+.countdown .item:first-child{
+  margin-left: 1rem;
+}
+
+.countdown .item:last-child{
+  margin-left: 1rem;
 }
 
 .countdown-item {
@@ -247,7 +272,7 @@ a img:hover {
 }
 
 .countdown-item .number {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
 }
 
