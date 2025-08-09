@@ -190,6 +190,24 @@ p{
   }
 }
 
+.btnCupo{
+  padding: 10px;
+  background-color: rgb(201, 65, 201);
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+pre{
+  font-family: 'Poppins';
+  font-size: 17px;
+}
+
 .vestimenta-container {
   position: relative;
   width: 100%;
